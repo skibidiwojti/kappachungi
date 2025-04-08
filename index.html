@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pobranie danych</title>
+</head>
+<body>
+    <h1>Kalkulator</h1>
+    Podaj liczbę: <input id="a"><br>
+    Podaj liczbę: <input id="b"><br>
+    <p id="wynik"></p>
+    <button onclick="dodaj()">dodaj</button><br>
+    <button onclick="odejmij()">odejmij</button><br>
+    <button onclick="pomnoz()">pomnóż</button><br>
+    <button onclick="dziel()">dziel</button><br>
+    <button onclick="poteguj()">potęguj</button><br>
+    <p id="wynik"></p>
+   
+    <script>
+  
+ 
+        function dodaj()
+        {
+            var a=parseFloat(document.getElementById('a').value);
+        var b=parseFloat(document.getElementById('b').value);
+        console.log(a);
+        console.log(b);
+        var wynik=document.getElementById('wynik');
+       
+            wynik.innerHTML="Wynik = "+(a+b);
+       
+        }
+        
+        function odejmij()
+        {
+            var a=parseFloat(document.getElementById('a').value);
+        var b=parseFloat(document.getElementById('b').value);
+        console.log(a);
+        console.log(b);
+        var wynik=document.getElementById('wynik');
+       
+            wynik.innerHTML="Wynik = "+(a-b);
+       
+        }
+
+        
+        function pomnoz()
+        {
+            var a=parseFloat(document.getElementById('a').value);
+        var b=parseFloat(document.getElementById('b').value);
+        console.log(a);
+        console.log(b);
+        var wynik=document.getElementById('wynik');
+       
+            wynik.innerHTML="Wynik = "+(a*b);
+       
+        }
+
+        
+        function dziel()
+        {
+            var a=parseFloat(document.getElementById('a').value);
+        var b=parseFloat(document.getElementById('b').value);
+        console.log(a);
+        console.log(b);
+        var wynik=document.getElementById('wynik');
+       
+            wynik.innerHTML="Wynik = "+(a/b);
+       
+        }
+
+         
+        function poteguj()
+        {
+            var a=parseFloat(document.getElementById('a').value);
+        var b=parseFloat(document.getElementById('b').value);
+        console.log(a);
+        console.log(b);
+        var wynik=document.getElementById('wynik');
+       
+            wynik.innerHTML="Wynik = "+(a**b);
+       
+        }
+    </script>
+</body>
+</html>
